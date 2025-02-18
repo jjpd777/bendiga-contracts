@@ -13,9 +13,6 @@ contract DeployBLESSD is Script {
         // Deploy the contract
         BLESSDToken token = new BLESSDToken();
         
-        // Fund the contract with some tokens for distribution
-        token.fundContract(1000e18); // Fund with 1000 tokens initially
-        
         vm.stopBroadcast();
 
         console.log("BLESSD Token deployed to:", address(token));

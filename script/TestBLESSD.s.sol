@@ -7,8 +7,7 @@ import "../src/BLESSDToken.sol";
 contract TestBLESSD is Script {
     function run() external {
         uint256 testWalletKey = vm.envUint("TEST_WALLET_KEY");
-        // Replace with your deployed contract address
-        address tokenAddress = address(0x/* deployed contract address */);
+        address tokenAddress = address(0x840934539c988fA438f005a4B94234E50f5D6c4a); // Your deployed address
         
         vm.startBroadcast(testWalletKey);
         

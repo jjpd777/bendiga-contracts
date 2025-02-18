@@ -11,7 +11,7 @@ contract BLESSDToken is ERC20, Ownable {
     uint256 public constant INITIAL_SUPPLY = 100_000_000e18; // 100 million tokens
 
     constructor() ERC20("BLESSD", "BLESSD") Ownable(msg.sender) {
-        _mint(msg.sender, INITIAL_SUPPLY);
+        _mint(address(this), INITIAL_SUPPLY);
     }
 
     function claimTokens() external {
