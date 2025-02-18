@@ -8,7 +8,7 @@ contract BLESSDToken is ERC20, Ownable {
     mapping(address => uint256) public lastClaimTime;
     uint256 public constant CLAIM_AMOUNT = 1e18; // 1 token with 18 decimals
     uint256 public constant CLAIM_COOLDOWN = 10 minutes;
-    uint256 public constant INITIAL_SUPPLY = 100_000_000e18; // 100 million tokens
+    uint256 public constant INITIAL_SUPPLY = 1_000_000_000e18;
 
     constructor() ERC20("BLESSD", "BLESSD") Ownable(msg.sender) {
         _mint(address(this), INITIAL_SUPPLY);
